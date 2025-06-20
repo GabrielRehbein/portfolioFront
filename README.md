@@ -1,4 +1,4 @@
-# Portfólio Pessoal – Gabriel Rehbein
+# Portfólio Pessoal – Gabriel Rehbein [EM DESENVOLVIMENTO]
 
 Este projeto é um portfólio web desenvolvido como trabalho final da disciplina Programação Web. Nele apresento um pouco sobre mim, as tecnologias que utilizo, meus interesses na área de desenvolvimento e projetos que venho construindo.
 
