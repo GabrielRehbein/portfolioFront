@@ -247,8 +247,18 @@ a {
     align-items: center;
 }
 .project-img{
-    width: 70%;
+    width: 100%;
+    height: 100%;
     border-radius: 16px;
+    transition: .5s;
+}
+
+#slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 460px;
 }
 
 .arrow {
@@ -265,7 +275,7 @@ a {
 
 #find-out-more {
     margin: 30px 0;
-    border-radius: 34px;
+    border-radius: 16px;
     height: 60px;
     width: 70%;
     padding-inline: 4rem;
@@ -342,9 +352,15 @@ a {
     margin-bottom:-5px !important;
 }
 
+.hide {
+    display: none;
+}
+
 .p-100 {
     padding: 100px;
 }
+
+
 /* end form */
 
 /* footer */
