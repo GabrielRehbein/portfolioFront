@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts: Lato and Open Sans -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" />
+
+    <title>Meu Portfólio</title>
+</head>
+
+<body class="purple-gradient">
+    <header id="header" class="bg-dark-grey container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#aboutme">Sobre Mim</a></li>
+                <li><a href="#main-technologies">Principais Tecnologias</a></li>
+                <li><a href="#my-projects">Meus Projetos</a></li>
+                <li><a href="#">Meu Curriculo</a></li>
+                <li class="li-btn">
+                    <a href="#">
+                        <button class="btn btn-success" id="btn-adm">
+                            AREA ADM
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="aboutme" id="aboutme">
+                <article id="aboutme-article">
+                    <h2 id="aboutme-title" class="fs-40">Sobre Mim</h2>
+                    <p>Olá, me chamo Gabriel Rehbein. Estou imerso no mundo da programação desde o início de 2024, com
+                        foco principal em tecnologias backend. Já desenvolvo sistemas completos e seguros, e estou
+                        sempre em busca de novos aprendizados, porque realmente gosto do que faço!</p>
+                </article>
+                <figure id="aboutme-figure">
+                    <img src="images/me.png" alt="minha-foto" class="me-image">
+                </figure>
+            </section>
+        </div>
+        <section class="main-technologies bg-light" id="main-technologies">
+            <div class="container">
+                <div class="techs">
+                    <div class="tech-container">
+                        <h2 class="fs-40 mb-10 " id="tech-title">Principais Tecnologias</h2>
+                        <ul id="figure-list" class="">
+                            <li><img src="images/python.png" alt="python" class="tech-img"></li>
+                            <li><img src="images/django.png" alt="django" class="tech-img"></li>
+                            <li><img src="images/postgre.png" alt="postgre" class="tech-img"></li>
+                            <li><img src="images/docker.png" alt="docker" class="tech-img"></li>
+                        </ul>
+                    </div>
+                    <article class="tech-container">
+                        <h2 class="fs-40 mb-10 txt-center" id="second-title-tech">Tecnologias que me empolgam</h2>
+                        <p class="fs-20 mb-1 txt-center">Tenho um interesse especial por desenvolvimento e integração de
+                            APIs. Sempre me esforço para aplicar boas práticas e seguir as convenções de cada linguagem
+                            que utilizo. Gosto de criar soluções limpas, bem estruturadas e funcionais, daquelas que me
+                            dão orgulho e mostram minha dedicação com cada linha de código.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="my-projects-section purple-gradient">
+            <div class="container" id="my-projects">
+                <h2 class="fs-40 txt-center white-text title">Meus Projetos</h2>
+                <div class="d-flex container-project">
+                    <i class="fa-solid fa-arrow-left arrow fs-40"></i>
+                    <img src="images/projeto1.png" alt="projeto" class="project-img">
+                    <i class="fa-solid fa-arrow-right arrow fs-40"></i>
+                </div>
+                <div class="bg-white d-flex mb-10" id="find-out-more">
+                    <img class=" icon-in-bar circle" src="images/linkedin.png" alt="linkedin">
+                    <button class="btn btn-dark" id="btn-find-out-more">Saiba mais</button>
+                    <img class=" icon-in-bar" src="images/github.png" alt="github">
+                </div>
+            </div>
+        </section>
+        <section class="form-section p-100 bg-light">
+            <div class="container">
+                <div class="container-form bg-dark-grey">
+                    <h2 class="title-form fs-40 white-text txt-center p-40">Me notifique</h2>
+                    <form id="notify-me-form">
+                        <div class="colunm txt-center adj-input mb-10">
+                            <label for="email" id="email" class="fs-15 white-text">Email</label>
+                            <input type="email" name="email" class="form-control">
+                        </div>
+
+                        <div  class="colunm txt-center adj-input mb-10">
+                            <label for="subject" id="subject" class="fs-15 white-text">Assunto</label>
+                            <input type="text" name="subject" class="form-control">
+                        </div>
+
+                        <div class="colunm txt-center adj-input mb-10">
+                            <label for="message" id="message" class="fs-15 white-text">Mensagem</label>
+                            <textarea rows="5" name="message" id="message" class="form-control .form-control-textarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success mb-10" id="btn-send-email">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="bg-dark-grey">
+        <p class="white-text">@Gabadev</p>
+    </footer>
+</body>
+
+</html>
