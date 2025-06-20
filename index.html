@@ -15,6 +15,7 @@
     <!-- Google Fonts: Lato and Open Sans -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" />
+    <script src="js/scripts.js" defer></script>
 
     <title>Meu Portfólio</title>
 </head>
@@ -94,17 +95,17 @@
                     <h2 class="title-form fs-40 white-text txt-center p-40">Me notifique</h2>
                     <form id="notify-me-form">
                         <div class="colunm txt-center adj-input mb-10">
-                            <label for="email" id="email" class="fs-15 white-text">Email</label>
-                            <input type="email" name="email" class="form-control">
+                            <label for="email" class="fs-15 white-text">Email</label>
+                            <input type="email" id="email" name="email" class="form-control">
                         </div>
 
                         <div  class="colunm txt-center adj-input mb-10">
-                            <label for="subject" id="subject" class="fs-15 white-text">Assunto</label>
-                            <input type="text" name="subject" class="form-control">
+                            <label for="subject"  class="fs-15 white-text">Assunto</label>
+                            <input type="text" name="subject" id="subject" class="form-control">
                         </div>
 
                         <div class="colunm txt-center adj-input mb-10">
-                            <label for="message" id="message" class="fs-15 white-text">Mensagem</label>
+                            <label for="message" class="fs-15 white-text">Mensagem</label>
                             <textarea rows="5" name="message" id="message" class="form-control .form-control-textarea"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success mb-10" id="btn-send-email">ENVIAR</button>

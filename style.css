@@ -60,6 +60,10 @@ a {
     display: flex;
 }
 
+.bg-green {
+    background-color: #278231;
+}
+
 .purple-gradient {
     background-image: linear-gradient(to right, #190062, #4b26b6, #3407b6);
 }
@@ -432,3 +436,38 @@ footer {
     }
 }
 /* end media */
+
+.success-warning {
+    position: fixed; 
+    top: 20px; 
+    left: 50%;   
+    transform: translateX(-50%);
+    
+    z-index: 9999;
+    
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #1b1b1b;
+    width: 40%;
+    max-height: 50px;
+    animation-name: entryTop;
+    animation-duration: 3s;
+}
+
+@keyframes entryTop {
+    0% {
+        margin-top: -100px;
+        opacity: .7px;
+    }
+    50% {
+        margin-top: 30px;
+        opacity: 1;
+    }
+    100%{
+        display: none;
+        margin-top: -100px;
+    }
+}
