@@ -249,8 +249,7 @@ a {
 .project-img{
     width: 100%;
     height: 100%;
-    border-radius: 16px;
-    transition: .5s;
+    border-radius: 13px;
 }
 
 #slide {
@@ -259,6 +258,9 @@ a {
     align-items: center;
     width: 70%;
     height: 460px;
+    border: 5px solid #fff;
+    border-radius: 16px;
+    transition: 2s;
 }
 
 .arrow {
@@ -353,7 +355,7 @@ a {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .p-100 {
