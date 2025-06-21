@@ -242,9 +242,17 @@ a {
 
 /* projetos */
 .container-project {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#my-projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .project-img{
     width: 100%;
