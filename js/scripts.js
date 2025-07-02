@@ -39,7 +39,7 @@ const containerProject = document.querySelector('.container-project');
 const projectInfo = document.querySelectorAll('.project-info');
 let idImageSlide = 0;
 
-//TODO adicionar os links do projeto no "footer" da imagem do projeto(linkedin e github)
+
 containerProject.addEventListener('click', (e) => {
     const rightArrowClassName = 'fa-arrow-right';
     const leftArrowClassName = 'fa-arrow-left';
@@ -70,3 +70,25 @@ containerProject.addEventListener('click', (e) => {
     }
 })
 
+// Login
+
+const btnAdmLogin = document.querySelector('#btn-adm');
+const site = document.querySelector('#site');
+const loginScreen = document.querySelector('#login-screen');
+const btnBackLogin = document.querySelector('#btn-back-login');
+const btnLogin = document.querySelector('#btn-login');
+
+
+btnLogin.addEventListener('click', () => {
+    alert('Função de login ainda nao desenvolvida');
+})
+btnAdmLogin.addEventListener('click', () => {
+    site.classList.add('hide');
+    loginScreen.classList.remove('hide')
+})
+
+btnBackLogin.addEventListener('click', () => {
+    site.classList.remove('hide');
+    loginScreen.classList.add('hide')
+
+})
