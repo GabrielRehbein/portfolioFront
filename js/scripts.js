@@ -1,4 +1,4 @@
-const sendEmailForm = document.querySelector("#notify-me-form");
+const sendEmailForm = document.querySelector(".form");
 
 const successDiv = document.createElement('div');
 successDiv.className = 'bg-green txt-center white-text success-warning';
