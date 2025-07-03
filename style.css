@@ -83,7 +83,7 @@ a {
     background-image: linear-gradient(to right, #190062, #4b26b6, #3407b6);
 }
 
-#header {
+.header {
     z-index: 999;
     position: sticky;
     top: 40px;
@@ -117,6 +117,9 @@ a {
     color: #fff;
 }
 
+.btn-primary {
+    background-color: #1e55bf;
+}
 .btn:hover {
     opacity: 1;
 }
@@ -124,10 +127,27 @@ a {
 .btn-success {
     background-color: #278231;
 }
+
+.btn-danger {
+    background-color: #b11010;
+}
+
+#btn-leave-adm {
+    padding: .5rem 2.5rem;
+    font-size: 15px;
+}
 #btn-adm {
     padding: .5rem 1.5rem;
     font-weight: bold;
     font-size: 15px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .btn-dark {
@@ -139,9 +159,11 @@ a {
     background: #3c3c3c;
 }
 
+.navbar {
+    width: 90%;
+}
 .nav-links {
     display: flex;
-    gap: 80px;
     justify-content: space-between;
     align-items: center;
 }
@@ -428,7 +450,7 @@ footer {
     .container {
         max-width: 100%;
     }
-    #header {
+    .header {
         height: 200px;
         position: relative;
         top: 0;
@@ -560,3 +582,55 @@ footer {
 #login-form input {
     padding: 10px;
 }
+
+/* ADM */
+
+#adm {
+    height: 100vh;
+}
+
+#main-adm {
+    height: 80%;
+    border-radius: 15px;
+    padding: 3%;
+}
+
+#header-adm {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.top-actions-adm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-type-project {
+    padding: 1rem;
+}
+
+.search-container  {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#input-search-title {
+    width: 75%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#search-btn {
+    width: 15%;
+    height: 100%;
+    padding: 1rem;
+}
+
+#btn-create-project {
+    padding: 1rem;
+    width: 10%;
+}
+/* END AND */

@@ -22,7 +22,7 @@
 
 <body class="purple-gradient">
     <div id="site">
-        <header id="header" class="bg-dark-grey container">
+        <header id="" class="bg-dark-grey container header">
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="#aboutme">Sobre Mim</a></li>
@@ -166,8 +166,47 @@
     <!-- END LOGIN -->
 
     <!-- ADM -->
-    <div class="adm">
-        
+    <div id="adm">
+         <header class="bg-dark-grey container header" id="header-adm">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><h1 class="uppercase bold white-text" id="adm-title">AREA ADMINISTRATIVA</h1></li>
+                    <li class="li-btn">
+                        <a href="#">
+                            <button class="btn btn-danger bold" id="btn-leave-adm">
+                                SAIR
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container bg-dark-grey" id="main-adm">
+            <div class="top-actions-adm">
+                <div class="search-container top-action">
+                    <input type="search" name="input-search-title" id="input-search-title" class="form-control fs-15" placeholder="Pesquise por título...">
+                    <button class="btn btn-primary" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <select name="filter-type-project" id="filter-type-project" class="form-control btn btn-primary bold txt-center top-action fs-15">
+                    <option value="all" class="uppercase form-control">
+                        TODOS TIPOS
+                    </option>
+                    <option value="backend" class="uppercase form-control">
+                        BACKEND
+                    </option>
+                    <option value="frontend" class="uppercase form-control">
+                        FRONTEND
+                    </option>
+                    <option value="full-stack" class="uppercase form-control">
+                        FULL STACK
+                    </option>
+                </select>
+
+                <button class="btn-success btn bold top-action fs-15" id="btn-create-project"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </main>
     </div>
     <!-- END ADM -->
 </body>
