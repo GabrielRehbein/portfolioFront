@@ -134,10 +134,10 @@
                     </div>
                 </div>
             </section>
-    </main>
-    <footer class="bg-dark-grey">
-        <p class="white-text">@Gabadev</p>
-    </footer>
+        </main>
+        <footer class="bg-dark-grey">
+            <p class="white-text">@Gabadev</p>
+        </footer>
     </div>
 
     <!-- LOGIN -->
@@ -148,17 +148,16 @@
                 <form class="form " id="login-form">
                     <div class="colunm txt-center adj-input mb-25 div-label-input">
                         <label for="adm-email" class="fs-15 white-text mb-5">EMAIL:</label>
-                        <input name="adm-email" type="email" class="form-control fs-15 txt-center"
-                           >
+                        <input name="adm-email" type="email" class="form-control fs-15 txt-center">
                     </div>
                     <div class="colunm txt-center adj-input mb-25 div-label-input">
                         <label for="adm-senha" class="fs-15 white-text mb-5">SENHA:</label>
-                        <input name="adm-senha" type="password" class="form-control fs-15 txt-center"
-                        >
+                        <input name="adm-senha" type="password" class="form-control fs-15 txt-center">
                     </div>
                     <button class="btn btn-success mb-10 btn-login" id="btn-login">ENTRAR<i
                             class="fa-solid fa-right-to-bracket"></i></button>
-                    <button class="btn btn-secondary btn-login" id="btn-back-login">VOLTAR<i class="fa-solid fa-backward"></i></button>
+                    <button class="btn btn-secondary btn-login" id="btn-back-login">VOLTAR<i
+                            class="fa-solid fa-backward"></i></button>
                 </form>
             </div>
         </div>
@@ -167,11 +166,13 @@
 
     <!-- ADM -->
     <div id="adm">
-         <header class="bg-dark-grey container header" id="header-adm">
+        <header class="bg-dark-grey container header" id="header-adm">
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><h1 class="uppercase bold white-text" id="adm-title">AREA ADMINISTRATIVA</h1></li>
+                    <li>
+                        <h1 class="uppercase bold white-text" id="adm-title">AREA ADMINISTRATIVA</h1>
+                    </li>
                     <li class="li-btn">
                         <a href="#">
                             <button class="btn btn-danger bold" id="btn-leave-adm">
@@ -185,27 +186,58 @@
         <main class="container bg-dark-grey" id="main-adm">
             <div class="top-actions-adm">
                 <div class="search-container top-action">
-                    <input type="search" name="input-search-title" id="input-search-title" class="form-control fs-15" placeholder="Pesquise por título...">
-                    <button class="btn btn-primary" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" name="input-search-title" id="input-search-title" class="form-control fs-15"
+                        placeholder="Pesquise por título...">
+                    <button class="btn btn-primary" id="search-btn"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
-                <select name="filter-type-project" id="filter-type-project" class="form-control btn btn-primary bold txt-center top-action fs-15">
-                    <option value="all" class="uppercase form-control">
-                        TODOS TIPOS
-                    </option>
-                    <option value="backend" class="uppercase form-control">
-                        BACKEND
-                    </option>
-                    <option value="frontend" class="uppercase form-control">
-                        FRONTEND
-                    </option>
-                    <option value="full-stack" class="uppercase form-control">
-                        FULL STACK
-                    </option>
-                </select>
+                <div class="select-icon-wrapper">
+                    <select name="filter-type-project" id="filter-type-project"
+                        class="form-control btn btn-primary bold txt-center top-action fs-15 select-with-icon">
+                        <option value="all" class="uppercase">Todos os tipos</option>
+                        <option value="backend" class="uppercase">BACKEND</option>
+                        <option value="frontend" class="uppercase">FRONTEND</option>
+                        <option value="full-stack" class="uppercase">FULL STACK</option>
+                    </select>
+                </div>
 
-                <button class="btn-success btn bold top-action fs-15" id="btn-create-project"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn-success btn bold top-action fs-15" id="btn-create-project"><i
+                        class="fa-solid fa-plus"></i></button>
             </div>
+            <section class="table-section">
+                <table id="adm-table" class="txt-center white-text table">
+                    <tr class="">
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Tipo Projeto</th>
+                        <th>Categoria</th>
+                        <th>Ações</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>MyStock</td>
+                        <td>FULL STACK</td>
+                        <td>SAAS</td>
+                        <td class="actions-wrapper">
+                            <button class="btn btn-primary"><i class="fa-solid fa-eye"></i></button>
+                            <button class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SGE</td>
+                        <td>FULL STACK</td>
+                        <td>SAAS</td>
+                        <td class="actions-wrapper">
+                            <button class="btn btn-primary"><i class="fa-solid fa-eye"></i></button>
+                            <button class="btn btn-warning"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
         </main>
     </div>
     <!-- END ADM -->
