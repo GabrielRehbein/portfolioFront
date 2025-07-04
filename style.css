@@ -164,12 +164,13 @@ a {
 }
 
 .navbar {
-    width: 90%;
+    width: 100%;
 }
 .nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3rem;
 }
 
 .nav-links li {
@@ -590,13 +591,13 @@ footer {
 /* ADM */
 
 #adm {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #main-adm {
-    min-height: 75%;
+    min-height: 75vh;
     border-radius: 15px;
-    padding: 3%;
+    padding: 3rem;
 }
 
 #header-adm {
@@ -680,4 +681,4 @@ footer {
 }
 
 
-/* END AND */
+/* END ADM */

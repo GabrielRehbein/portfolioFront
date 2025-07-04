@@ -15,7 +15,7 @@
     <!-- Google Fonts: Lato and Open Sans -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" />
-    <script src="js/scripts.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
 
     <title>Meu Portfólio</title>
 </head>
@@ -113,7 +113,7 @@
                 <div class="container">
                     <div class="container-form bg-dark-grey">
                         <h2 class="title-form fs-40 white-text txt-center p-40">Me notifique</h2>
-                        <form class="form">
+                        <form class="form" id="email-form">
                             <div class="colunm txt-center adj-input mb-10">
                                 <label for="email" class="fs-15 white-text">Email</label>
                                 <input type="email" id="email" name="email" class="form-control">
@@ -148,11 +148,11 @@
                 <form class="form " id="login-form">
                     <div class="colunm txt-center adj-input mb-25 div-label-input">
                         <label for="adm-email" class="fs-15 white-text mb-5">EMAIL:</label>
-                        <input name="adm-email" type="email" class="form-control fs-15 txt-center">
+                        <input name="adm-email" id="adm-email" type="email" class="form-control fs-15 txt-center">
                     </div>
                     <div class="colunm txt-center adj-input mb-25 div-label-input">
                         <label for="adm-senha" class="fs-15 white-text mb-5">SENHA:</label>
-                        <input name="adm-senha" type="password" class="form-control fs-15 txt-center">
+                        <input name="adm-senha" id="adm-senha" type="password" class="form-control fs-15 txt-center">
                     </div>
                     <button class="btn btn-success mb-10 btn-login" id="btn-login">ENTRAR<i
                             class="fa-solid fa-right-to-bracket"></i></button>
@@ -165,7 +165,7 @@
     <!-- END LOGIN -->
 
     <!-- ADM -->
-    <div id="adm">
+    <div id="adm" class="hide">
         <header class="bg-dark-grey container header" id="header-adm">
             <nav class="navbar">
                 <ul class="nav-links">
