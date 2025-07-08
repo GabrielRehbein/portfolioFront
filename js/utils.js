@@ -1,5 +1,5 @@
-export default function trocarTelas(ativar, desativar){
-    ativar.classList.remove('hide');
-    desativar.classList.add('hide');
+export default function ChangeScreen(enable, disable){
+    enable.classList.remove('hide');
+    disable.classList.add('hide');
 }
 

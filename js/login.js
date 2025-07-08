@@ -1,5 +1,5 @@
 import Admin from "./admin.js";
-import trocarTelas from "./utils.js";
+import changeScreen from "./utils.js";
 
 const btnAdmLogin = document.querySelector('#btn-adm');
 const site = document.querySelector('#site');
@@ -51,7 +51,7 @@ class Login {
     logout(){
         btnLogout.addEventListener('click', (e) => {
             e.preventDefault();
-            trocarTelas(site, admScreen);
+            changeScreen(site, admScreen);
         })
     }
 
