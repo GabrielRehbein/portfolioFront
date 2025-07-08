@@ -143,7 +143,7 @@
     <!-- LOGIN -->
     <div class="container center-x hide" id="login-screen">
         <div class="login center-y">
-            <div class=" bg-dark-grey p-40" id="login-card">
+            <div class=" bg-dark-grey p-40 card">
                 <h2 class="fs-40 white-text txt-center mb-25">LOGIN</h2>
                 <form class="form " id="login-form">
                     <div class="colunm txt-center adj-input mb-25 div-label-input">
@@ -239,6 +239,50 @@
                 </table>
             </section>
         </main>
+        <div class="container center-x" id="create-project-screen">
+            <div class="login center-y">
+                <div class=" bg-dark-grey p-40 card form-card">
+                    <h2 class="fs-40 white-text txt-center mb-25">Cadastrar Projeto</h2>
+                    <form class="form project-form" >
+                        <div class="colunm txt-center adj-input mb-25 div-label-input">
+                            <label for="projectName" class="fs-15 white-text mb-5">Nome</label>
+                            <input name="projectName" id="project-name" type="text" required class="form-control fs-15 txt-center">
+                        </div>
+                        <div class="d-flex double-input-in-line mb-25">
+                            <div class="colunm txt-center adj-input mb-25 div-label-input input-wrapper">
+                                <label class="fs-15 white-text mb-5 txt-center">Tipo</label>
+                                <select name="projectType" id="project-type" class="form-control fs-15 txt-center" required>
+                                    <option value="" selected disabled>Escolha</option>
+                                    <option value="backend">Backend</option>
+                                    <option value="frontend">Frontend</option>
+                                    <option value="fullstack">Full Stack</option>
+                                </select>
+                            </div>
+                            <div class="colunm txt-center adj-input mb-25 div-label-input input-wrapper">
+                                <label class="fs-15 white-text mb-5">Categoria</label>
+                                    <select name="projectCategory" id="project-category" class="form-control fs-15 txt-center">
+                                        <option value="" selected disabled>Escolha</option>
+                                        <option value="auto">Automação</option>
+                                        <option value="api">API</option>
+                                        <option value="ai">IA</option>
+                                        <option value="homepage">homepage</option>
+                                        <option value="saas">Saas</option>
+                                        <option value="other">Outra</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="colunm txt-center adj-input mb-25 div-label-input">
+                            <label for="description" class="fs-15 white-text mb-5 txt-center">Descrição</label>
+                            <textarea name="description" id="description" class="form-control form-control-textarea fs-15 txt-center" rows="5"></textarea>
+                        </div>
+                        <button class="btn btn-success mb-10 btn-form bold uppercase">Cadastrar
+                            <i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-secondary btn-form bold uppercase">VOLTAR<i
+                                class="fa-solid fa-backward"></i></button>
+                    </form>
+            </div>
+        </div>
+    </div>
     </div>
     <!-- END ADM -->
 </body>

@@ -117,6 +117,10 @@ a {
     color: #fff;
 }
 
+
+.btn-form {
+    width: 80% !important;
+}
 .btn-warning {
     background-color: #bea81c;
 }
@@ -562,10 +566,23 @@ footer {
     margin: auto;
 }
 
-#login-card {
+.card {
     width: 400px;
     border-radius: 15px;
     box-shadow: 4px 4px 14px 10px #2f2f2f65;
+}
+
+.form-card {
+    width: 600px;
+}
+
+.form-card div input,
+.form-card div select {
+    padding: .5rem 2rem;
+}
+
+.btn-form {
+    padding: 1rem 2rem;
 }
 
 .btn-login,
@@ -680,5 +697,19 @@ footer {
     width: 25%;
 }
 
+.double-input-in-line {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.double-input-in-line .input-wrapper {
+    width: 50% !important;
+    margin: 0 auto !important;
+}
+
+.double-input-in-line .input-wrapper .form-control {
+    width: 100% !important;
+}
 /* END ADM */
