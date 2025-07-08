@@ -482,6 +482,9 @@ footer {
         animation: none !important;
         border: none !important;
     }
+    #slide {
+        height: 320px;
+    }
 }
 @media (max-width: 720px) {
     .container {
