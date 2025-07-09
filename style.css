@@ -619,8 +619,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    #create-project-screen{
+    #create-project-screen {
         height: 100vh;
+        display: flex;
+        justify-content: center; /* Alinha horizontalmente */
+        align-items: center;     /* Alinha verticalmente */
     }
 
     .p-40 {
@@ -712,15 +715,21 @@ footer {
 
 #adm {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #main-adm {
+    width: 100%;
     min-height: 75vh;
     border-radius: 15px;
     padding: 3rem;
 }
 
 #header-adm {
+    width: 100%;
     margin-bottom: 60px;
     position: relative;
 }

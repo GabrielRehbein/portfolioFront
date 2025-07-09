@@ -1,10 +1,10 @@
 import slider from './slider.js'
-import emailForm from './form.js';
+import emailForm from './forms/email-form.js';
 import Login from './login.js';
-
+import ProjectForm from './forms/project-form.js'
 
 const login = new Login();
-
+const projectForm = new ProjectForm();
 
 document.addEventListener('DOMContentLoaded', (e) => {
     slider();
@@ -15,12 +15,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
     login.eventoLogin();
     login.logout();
 
+    projectForm.openFormScreen();
+
 });
 
 const btnAdmLogin = document.querySelector('#btn-adm');
 const btnBackLogin = document.querySelector('#btn-back-login');
-
-
-
-// Login
-
