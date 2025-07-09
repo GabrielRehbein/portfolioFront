@@ -537,6 +537,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
     #figure-list {
         display: flex;
 
@@ -549,8 +554,11 @@ footer {
     .tech-img {
         height: 100px;
     }
-
-    #slide {
+    .project-form {
+        width: 80% !important;
+    }
+    #slide,
+    #create-project-screen {
         width: 100%;
         border-radius: 0;
         border: none;
