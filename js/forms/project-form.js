@@ -11,10 +11,10 @@ const btnRegisterProject = document.querySelector("#btn-register-project-final")
 export default class CreateProjectForm extends BaseForm {
 
     constructor(){
-        super(createForm);
+        super(createForm, btnRegisterProject);
         this.screenForm = createProjectScreen;
         this.addPreventDefault();
-        this.createProject();
+        this.onSubmit(() => this.changeScreenOnCreate())
     }
 
     openFormScreen(){
@@ -35,18 +35,9 @@ export default class CreateProjectForm extends BaseForm {
         }
     }
 
-    
-
-    createProject(){
-        btnRegisterProject.addEventListener('click', (e) => {
-            e.preventDefault();
-            // Pegar e (outra funcao validade os dados) e criar um dicionario
-            const data = this.getInputsData();
-            // Chamar API EX: ProductService.create(dados)
-            console.log('projeto criado')
-            changeScreen(admScreen, this.screenForm);
-            changeScreen(headerAdm, this.screenForm);
-        })
+    changeScreenOnCreate(){
+        changeScreen(admScreen, this.screenForm);
+        changeScreen(headerAdm, this.screenForm);
     }
 
 }
