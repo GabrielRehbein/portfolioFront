@@ -1,7 +1,7 @@
 import changeScreen from "../utils.js"
 import BaseForm from "./base-form.js"
 
-const createProjectForm = document.querySelector("#create-project-screen")
+const createProjectScreen = document.querySelector("#create-project-screen")
 const btnCreateProject = document.querySelector("#btn-create-project")
 const headerAdm = document.querySelector("#header-adm")
 
@@ -11,7 +11,7 @@ export default class CreateProjectForm extends BaseForm {
 
     constructor(){
         super();
-        this.screenForm = createProjectForm;
+        this.screenForm = createProjectScreen;
     }
     openFormScreen(){
         btnCreateProject.addEventListener('click', (e) => {
