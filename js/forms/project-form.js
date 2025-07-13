@@ -1,4 +1,5 @@
 import changeScreen from "../utils.js"
+import popUpNotify from "../warnings.js"
 import BaseForm from "./base-form.js"
 
 const createProjectScreen = document.querySelector("#create-project-screen")
@@ -38,6 +39,7 @@ export default class CreateProjectForm extends BaseForm {
     changeScreenOnCreate(){
         changeScreen(admScreen, this.screenForm);
         changeScreen(headerAdm, this.screenForm);
+        popUpNotify('Projeto criado com sucesso!');
     }
 
 }

@@ -1,5 +1,6 @@
 import Admin from "./admin.js";
 import changeScreen from "./utils.js";
+import popUpNotify from "./warnings.js"; 
 
 const btnAdmLogin = document.querySelector('#btn-adm');
 const site = document.querySelector('#site');
@@ -38,13 +39,13 @@ class Login {
     logar(email, senha){
         if (email === emailADM && senha === senhaADM)
         {
-            alert('logado com sucesso')
+            popUpNotify('Usuário logado com sucesso!');
             admin.openAdminScreen(loginScreen);
-             this.#emailInput.value = '';
-             this.#senhaInput.value = '';
+            this.#emailInput.value = '';
+            this.#senhaInput.value = '';
         }
         else {
-            alert('Senha e ou email incorretos')
+            popUpNotify('Senha e/ou e-mail incorreto(s)!', true);
         }   
     }
 
@@ -52,6 +53,7 @@ class Login {
         btnLogout.addEventListener('click', (e) => {
             e.preventDefault();
             changeScreen(site, admScreen);
+            popUpNotify('Usuário deslogado com sucesso!')
         })
     }
 
