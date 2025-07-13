@@ -1,8 +1,6 @@
-const sendEmailForm = document.querySelector("#email-form");
+import popUpNotify from "../warnings.js";
 
-const successDiv = document.createElement('div');
-successDiv.className = 'bg-green txt-center white-text success-warning';
-successDiv.innerHTML = '<h3>Email enviado com sucesso!</h3>';
+const sendEmailForm = document.querySelector("#email-form");
 
 function emailForm() {
     sendEmailForm.addEventListener("submit", (e) => {
@@ -21,13 +19,9 @@ function emailForm() {
             subjectInput.value = "";
             messageInput.value = "";
 
-            document.body.appendChild(successDiv);
-
-            setTimeout(() => {
-                document.body.removeChild(successDiv);
-            }, 2500);
+            popUpNotify("E-mail enviado com sucesso!")
         } else {
-            alert('erro');
+            popUpNotify("Erro, preencha todos os campos!", true)
         }
     });
 }

@@ -640,7 +640,7 @@ footer {
 }
 /* end media */
 
-.success-warning {
+.pop-up-notice {
     position: fixed; 
     top: 20px; 
     left: 50%;   
