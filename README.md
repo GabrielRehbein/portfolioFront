@@ -17,6 +17,7 @@ Criar uma aplicação web pessoal e interativa, que:
 - Seção "Principais Tecnologias"
 - Seção "Meus Projetos"
 - Seção "Me notifique"
+- Seção Administrativa (Serve para gereniar meus projetos) (Desenvolvimento)
 - Carrossel de Projetos com setas de navegação
 - Estrutura em HTML, CSS e JavaScript puros
 
@@ -39,4 +40,5 @@ No terminal, execute o seguinte comando:
 
 ```bash
 git clone https://github.com/GabrielRehbein/portfolioFront.git
-
+cd portfolioFront
+code . (Se estiver usando VScode)
