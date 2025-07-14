@@ -487,6 +487,10 @@ footer {
     }
 }
 @media (max-width: 720px) {
+    .pop-up-notice {
+        width: 80% !important;
+        font-size: 15px;
+    }
     .container {
         max-width: 100%;
     }
