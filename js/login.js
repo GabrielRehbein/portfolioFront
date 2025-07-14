@@ -13,6 +13,9 @@ const admScreen = document.querySelector('#adm');
 const emailADM = 'gaba@gaba.com';
 const senhaADM = '123';
 
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
 
 const admin = new Admin();
 
@@ -26,9 +29,8 @@ class Login {
     }
 
     eventoLogin(){
-        loginForm.addEventListener('submit', (e) => {
+        btnLogin.addEventListener('click', (e) => {
             e.preventDefault();
-
             this.logar(
                 this.#emailInput.value,
                 this.#senhaInput.value
