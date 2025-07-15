@@ -116,7 +116,7 @@
                         <form class="form" id="email-form">
                             <div class="colunm txt-center adj-input mb-10">
                                 <label for="email" class="fs-15 white-text">Email</label>
-                                <input type="email" id="email" name="email" class="form-control">
+                                <input type="email" id="email" name="email" class="form-control" autocomplete="email">
                             </div>
 
                             <div class="colunm txt-center adj-input mb-10">
@@ -244,13 +244,13 @@
                     <h2 class="fs-40 white-text txt-center mb-25">Cadastrar Projeto</h2>
                     <form class="form project-form" id="create-project-form">
                         <div class="colunm txt-center adj-input mb-25 div-label-input">
-                            <label for="projectName" class="fs-15 white-text mb-5">Nome</label>
-                            <input name="projectName" id="project-name" type="text" required class="form-control fs-15 txt-center">
+                            <label for="project-name" class="fs-15 white-text mb-5">Nome</label>
+                            <input name="project-name" id="project-name" type="text" required class="form-control fs-15 txt-center">
                         </div>
                         <div class="d-flex double-input-in-line mb-25">
                             <div class="colunm txt-center adj-input mb-25 div-label-input input-wrapper">
-                                <label class="fs-15 white-text mb-5 txt-center">Tipo</label>
-                                <select name="projectType" id="project-type" class="form-control fs-15 txt-center" required>
+                                <label class="fs-15 white-text mb-5 txt-center" for="project-type">Tipo</label>
+                                <select name="project-type" id="project-type" class="form-control fs-15 txt-center" required>
                                     <option value="" selected disabled>Escolha</option>
                                     <option value="backend">Backend</option>
                                     <option value="frontend">Frontend</option>
@@ -258,8 +258,8 @@
                                 </select>
                             </div>
                             <div class="colunm txt-center adj-input mb-25 div-label-input input-wrapper">
-                                <label class="fs-15 white-text mb-5">Categoria</label>
-                                    <select name="projectCategory" id="project-category" class="form-control fs-15 txt-center">
+                                <label class="fs-15 white-text mb-5" for="project-category">Categoria</label>
+                                    <select name="project-category" id="project-category" class="form-control fs-15 txt-center">
                                         <option value="" selected disabled>Escolha</option>
                                         <option value="auto">Automação</option>
                                         <option value="api">API</option>
