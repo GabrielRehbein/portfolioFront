@@ -8,14 +8,15 @@ const headerAdm = document.querySelector("#header-adm")
 const createForm = document.querySelector("#create-project-form")
 const admScreen = document.querySelector("#main-adm")
 const btnRegisterProject = document.querySelector("#btn-register-project-final")
-
+const btnBack = document.querySelector('#btn-back');
 export default class CreateProjectForm extends BaseForm {
 
     constructor(){
         super(createForm, btnRegisterProject);
         this.screenForm = createProjectScreen;
         this.addPreventDefault();
-        this.onSubmit(() => this.changeScreenOnCreate())
+        this.backFormScreen();
+        this.onSubmit(() => this.changeFormScreen(true))
     }
 
     openFormScreen(){
@@ -23,6 +24,14 @@ export default class CreateProjectForm extends BaseForm {
         e.preventDefault();
         changeScreen(this.screenForm, admScreen);
         changeScreen(this.screenForm, headerAdm);
+        })
+    }
+
+    backFormScreen(){
+        btnBack.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.changeFormScreen(false);
+            this.cleanFields();
         })
     }
 
@@ -36,10 +45,12 @@ export default class CreateProjectForm extends BaseForm {
         }
     }
 
-    changeScreenOnCreate(){
+    changeFormScreen(isCreated){
         changeScreen(admScreen, this.screenForm);
         changeScreen(headerAdm, this.screenForm);
-        popUpNotify('Projeto criado com sucesso!');
+        if (isCreated) {
+            popUpNotify('Projeto criado com sucesso!');
+        }
     }
 
 }

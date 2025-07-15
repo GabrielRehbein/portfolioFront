@@ -1,5 +1,3 @@
-import changeScreen from "../utils.js";
-
 export default class Form {
     constructor(form, btnSubmit){
         this.form = form;
@@ -12,15 +10,19 @@ export default class Form {
         console.log(data);
     }
 
+    cleanFields(){
+        this.form.reset();
+    }
+
     onSubmit(callback){
-        this.btnSubmit.addEventListener('click', (e) => {
+        this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             // Pegar e (outra funcao validade os dados) e criar um dicionario
             const data = this.getInputsData();
             // Chamar API EX: ProductService.create(dados)
-            console.log('projeto criado')
-            callback()
+            console.log('projeto criado');
+            callback();
+            this.cleanFields();;
         })
     }
-
 }
