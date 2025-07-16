@@ -461,10 +461,14 @@ footer {
 
 @media (max-width: 850px) {
 #figure-list {
-
         flex-wrap: wrap;
         justify-content: space-between;
         
+    }
+
+    #aboutme-article {
+        width: 80%;
+        margin: 0 auto;
     }
     #figure-list li {
         width: 40%;
@@ -485,8 +489,14 @@ footer {
     #slide {
         height: 320px;
     }
+    .me-image {
+        display: none;
+    }
 }
 @media (max-width: 720px) {
+    p {
+        font-size: 20px !important;
+    }
     .pop-up-notice {
         width: 80% !important;
         font-size: 15px;
@@ -533,9 +543,7 @@ footer {
     .aboutme-figure {
         display: none;
     }
-    .me-image {
-        display: none;
-    }
+    
 
     
 }
